@@ -1,31 +1,31 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
-const brandColors = {
-  green: '#2b322b'
-};
-
 const systemColors = {
-  blue: '#007aff'
+  darkblue: '#343D4B',
+  lightblue: 'rgba(133, 137, 160, 0.3)',
+  lightgrey: '#F5F6FC',
 };
 
 module.exports = {
   theme: {
     extend: {
       colors: {
-        // `ex` prefix will create classes like `text-ex-red`
-        // Remove `ex` if you dont want prefix
         ex: {
-          ...brandColors,
           ...systemColors
         }
       },
       fontFamily: {
-        sans: ['Lato', ...defaultTheme.fontFamily.sans]
+        sans: ['Gotham', ...defaultTheme.fontFamily.sans]
       },
       screens: {
         xxl: '1410px'
+      },
+      height: {
+        '96': '24rem',
+        '128': '32rem',
+        '256': '64rem'
       }
-    }
+    },
   },
   variants: {
     borderWidth: ['responsive', 'hover']
