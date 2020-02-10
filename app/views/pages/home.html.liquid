@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello world! | platformOS Demo instance</title>
+  <link rel="stylesheet" href="{{ 'css/app.css' | asset_url }}">
+</head>
+
+<body class="antialiased font-sans leading-relaxed">
+
+  <div class="flex flex-row flex-wrap min-h-screen justify-start items-start">
+
+    <div class="w-full border-b-2 border-ex-lightgrey">
+      <div class="bg-ex-darkblue w-full shadow-xl flex items-center h-16">
+        <img src="{{ 'img/logo.svg' | asset_url }}" alt="platformOS Logo" width="175" class="ml-4">
+
+        <p class="text-white font-semibold -mt-px ml-3 pl-3 border-l border-ex-lightblue">
+          Hello world
+          <span class="font-light">Demo instance</span>
+        </p>
+      </div>
+
+      <div class="w-full flex justify-end h-128">
+        <img src="{{ 'img/welcome.svg' | asset_url }}" alt="Hello world!" class="h-128">
+      </div>
+    </div>
+
+    <div class="my-10 w-full">
+      <h2 class="text-2xl font-semibold text-center">
+        Welcome to your Demo instance!
+      </h2>
+
+      <div class="max-w-2xl mx-auto mt-10 font-light">
+        <p>
+          No matter what language you speak or front-end frame works you love, platformOS speaks your language - your unlimited development platform. Maecenas iaculis leo libero, vitae fringilla nisi fermentum eget. Proin ac ultrices est. Integer tempus vestibulum mauris.
+          Maecenas iaculis leo libero, vitae fringilla nisi fermentum eget. Proin ac ultrices est. Integer tempus vestibulum mauris.
+        </p>
+        <p class="mt-4">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-ex-lightgrey mt-auto w-full">
+      <div class="max-w-2xl flex justify-between items-center mx-auto py-3">
+        <img src="{{ 'img/logo-black.svg' | asset_url }}" alt="platformOS Logo" width="135" class="logo-black">
+
+        <ul class="font-light text-sm">
+          <li><a href="https://documentation.platformos.com" target="_blank">Documentation</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
