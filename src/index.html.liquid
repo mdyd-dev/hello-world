@@ -22,8 +22,12 @@
         </p>
       </div>
 
-      <div class="w-full flex justify-end h-128">
-        <img src="{{ 'img/welcome.svg' | asset_url }}" alt="Hello world!" class="h-128">
+      <div class="w-full flex bg-white h-128">
+        <div class="flex-grow-0 w-1/3 bg-white"></div>
+        <div class="flex-1 bg-ex-lightgrey w-2/3">
+          <img src="{{ 'img/welcome.svg' | asset_url }}" alt="Hello world!" class="h-128 bg-white">
+        </div>
+        <div class="flex-grow-0 bg-ex-lightgrey"></div>
       </div>
     </div>
 
