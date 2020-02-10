@@ -10,9 +10,9 @@ const config = {
     app: './src/js/app'
   },
   output: {
-    filename: 'js/[name].js',
-    chunkFilename: 'js/[name].[chunkhash:3].js',
-    path: path.resolve('app/assets')
+    filename: 'assets/js/[name].js',
+    chunkFilename: 'assets/js/[name].[chunkhash:3].js',
+    path: path.resolve('app')
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'app'),
@@ -49,12 +49,12 @@ const config = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css'
+      filename: 'assets/css/[name].css'
     }),
     new CopyPlugin([
-      { from: 'src/index.html', to: 'index.html' },
-      { from: 'src/img', to: 'img' },
-      { from: 'src/fonts', to: 'fonts' }
+      { from: 'src/index.html.liquid', to: 'views/pages/home.html.liquid' },
+      { from: 'src/img', to: 'assets/img' },
+      { from: 'src/fonts', to: 'assets/fonts' }
     ])
   ],
   mode: prod ? 'production' : 'development'

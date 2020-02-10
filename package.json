@@ -1,7 +1,9 @@
 {
   "scripts": {
     "clean": "npx del-cli app/*",
-    "start": "webpack-dev-server",
+    "dev-watch": "webpack-cli --watch",
+    "dev-sync": "pos-cli sync dev",
+    "start": "npx concurrently \"npm:dev-*\"",
     "build": "npm run clean && cross-env NODE_ENV=production npx webpack-cli",
     "build:dev": "npm run clean && cross-env NODE_ENV=development npx webpack-cli"
   },
@@ -15,6 +17,7 @@
     "@tailwindcss/custom-forms": "^0.2.1",
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
+    "concurrently": "^5.1.0",
     "copy-webpack-plugin": "^5.1.1",
     "cross-env": "^7.0.0",
     "css-loader": "^3.4.2",

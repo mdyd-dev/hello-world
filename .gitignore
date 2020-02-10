@@ -7,3 +7,6 @@ app/*
 
 # OS junk
 .DS_Store
+
+.pos
+tmp/

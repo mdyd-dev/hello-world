@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello world!</title>
-  <link rel="stylesheet" href="./css/app.css">
+  <title>Hello world! | platformOS Demo instance</title>
+  <link rel="stylesheet" href="{{ 'css/app.css' | asset_url }}">
 </head>
 
 <body class="antialiased font-sans leading-relaxed">
@@ -14,7 +14,7 @@
 
     <div class="w-full border-b-2 border-ex-lightgrey">
       <div class="bg-ex-darkblue w-full shadow-xl flex items-center h-16">
-        <img src="./img/logo.svg" alt="platformOS Logo" width="175" class="ml-4">
+        <img src="{{ 'img/logo.svg' | asset_url }}" alt="platformOS Logo" width="175" class="ml-4">
 
         <p class="text-white font-semibold -mt-px ml-3 pl-3 border-l border-ex-lightblue">
           Hello world
@@ -23,7 +23,7 @@
       </div>
 
       <div class="w-full flex justify-end h-128">
-        <img src="./img/welcome.svg" alt="Hello world!" class="h-128">
+        <img src="{{ 'img/welcome.svg' | asset_url }}" alt="Hello world!" class="h-128">
       </div>
     </div>
 
@@ -45,7 +45,7 @@
 
     <div class="bg-ex-lightgrey mt-auto w-full">
       <div class="max-w-2xl flex justify-between items-center mx-auto py-3">
-        <img src="./img/logo-black.svg" alt="platformOS Logo" width="135" class="logo-black">
+        <img src="{{ 'img/logo-black.svg' | asset_url }}" alt="platformOS Logo" width="135" class="logo-black">
 
         <ul class="font-light text-sm">
           <li><a href="https://documentation.platformos.com" target="_blank">Documentation</a></li>
