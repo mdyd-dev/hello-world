@@ -7,11 +7,11 @@ const prod = process.env.NODE_ENV === 'production';
 
 const config = {
   entry: {
-    app: './src/js/app'
+    app: './src/scripts/app'
   },
   output: {
-    filename: 'assets/js/[name].js',
-    chunkFilename: 'assets/js/[name].[chunkhash:3].js',
+    filename: 'assets/scripts/[name].js',
+    chunkFilename: 'assets/scripts/[name].[chunkhash:3].js',
     path: path.resolve('app')
   },
   devServer: {
@@ -49,11 +49,11 @@ const config = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'assets/css/[name].css'
+      filename: 'assets/styles/[name].css'
     }),
     new CopyPlugin([
       { from: 'src/index.html.liquid', to: 'views/pages/home.html.liquid' },
-      { from: 'src/img', to: 'assets/img' },
+      { from: 'src/images', to: 'assets/images' },
       { from: 'src/fonts', to: 'assets/fonts' }
     ])
   ],
